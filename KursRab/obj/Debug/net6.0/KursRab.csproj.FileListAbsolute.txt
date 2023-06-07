@@ -13,3 +13,18 @@ D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\refint\KursRab.dll
 D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.pdb
 D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.genruntimeconfig.cache
 D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\ref\KursRab.dll
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\bin\Debug\net6.0\KursRab.exe
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\bin\Debug\net6.0\KursRab.deps.json
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\bin\Debug\net6.0\KursRab.runtimeconfig.json
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\bin\Debug\net6.0\KursRab.dll
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\bin\Debug\net6.0\KursRab.pdb
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\KursRab.csproj.AssemblyReference.cache
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\KursRab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\KursRab.AssemblyInfoInputs.cache
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\KursRab.AssemblyInfo.cs
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\KursRab.csproj.CoreCompileInputs.cache
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\KursRab.dll
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\refint\KursRab.dll
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\KursRab.pdb
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\KursRab.genruntimeconfig.cache
+C:\Users\kijob\OneDrive\Рабочий стол\KursRabota\KursRab\obj\Debug\net6.0\ref\KursRab.dll

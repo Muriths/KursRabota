@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\VisualStudioProjects\\KursRab\\KursRab.csproj",
+      "projectUniqueName": "C:\\Users\\kijob\\OneDrive\\Рабочий стол\\KursRabota\\KursRab\\KursRab.csproj",
       "projectName": "KursRab",
-      "projectPath": "D:\\VisualStudioProjects\\KursRab\\KursRab.csproj",
+      "projectPath": "C:\\Users\\kijob\\OneDrive\\Рабочий стол\\KursRabota\\KursRab\\KursRab.csproj",
       "packagesPath": "C:\\Users\\kijob\\.nuget\\packages\\",
-      "outputPath": "D:\\VisualStudioProjects\\KursRab\\obj\\",
+      "outputPath": "C:\\Users\\kijob\\OneDrive\\Рабочий стол\\KursRabota\\KursRab\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
