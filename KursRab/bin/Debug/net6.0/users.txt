@@ -1,0 +1,2 @@
+admin:admin:admin
+liza:liza1:user

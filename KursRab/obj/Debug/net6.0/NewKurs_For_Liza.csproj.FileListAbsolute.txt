@@ -1,0 +1,15 @@
+D:\VisualStudioProjects\NewKurs_For_Liza\bin\Debug\net6.0\NewKurs_For_Liza.exe
+D:\VisualStudioProjects\NewKurs_For_Liza\bin\Debug\net6.0\NewKurs_For_Liza.deps.json
+D:\VisualStudioProjects\NewKurs_For_Liza\bin\Debug\net6.0\NewKurs_For_Liza.runtimeconfig.json
+D:\VisualStudioProjects\NewKurs_For_Liza\bin\Debug\net6.0\NewKurs_For_Liza.dll
+D:\VisualStudioProjects\NewKurs_For_Liza\bin\Debug\net6.0\NewKurs_For_Liza.pdb
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\NewKurs_For_Liza.csproj.AssemblyReference.cache
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\NewKurs_For_Liza.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\NewKurs_For_Liza.AssemblyInfoInputs.cache
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\NewKurs_For_Liza.AssemblyInfo.cs
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\NewKurs_For_Liza.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\NewKurs_For_Liza.dll
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\refint\NewKurs_For_Liza.dll
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\NewKurs_For_Liza.pdb
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\NewKurs_For_Liza.genruntimeconfig.cache
+D:\VisualStudioProjects\NewKurs_For_Liza\obj\Debug\net6.0\ref\NewKurs_For_Liza.dll

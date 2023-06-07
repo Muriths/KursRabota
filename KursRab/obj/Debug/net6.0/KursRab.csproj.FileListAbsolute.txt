@@ -1,0 +1,15 @@
+D:\VisualStudioProjects\KursRab\bin\Debug\net6.0\KursRab.exe
+D:\VisualStudioProjects\KursRab\bin\Debug\net6.0\KursRab.deps.json
+D:\VisualStudioProjects\KursRab\bin\Debug\net6.0\KursRab.runtimeconfig.json
+D:\VisualStudioProjects\KursRab\bin\Debug\net6.0\KursRab.dll
+D:\VisualStudioProjects\KursRab\bin\Debug\net6.0\KursRab.pdb
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.csproj.AssemblyReference.cache
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.AssemblyInfoInputs.cache
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.AssemblyInfo.cs
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.dll
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\refint\KursRab.dll
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.pdb
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\KursRab.genruntimeconfig.cache
+D:\VisualStudioProjects\KursRab\obj\Debug\net6.0\ref\KursRab.dll
