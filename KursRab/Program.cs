@@ -1,4 +1,5 @@
-﻿namespace LibraryApp
+﻿
+namespace LibraryApp
 {
     class Program
     {
@@ -6,8 +7,13 @@
         static string booksFilePath = "books.txt";
         static string CurrentUser;
 
+
         static void Main()
         {
+
+
+
+
             Console.WriteLine("Добро пожаловать в Библиотеку!");
 
             bool isAuthorized = false;
@@ -33,14 +39,14 @@
                 }
             }
             CurrentUser = currentUser;
-                if (IsAdmin(currentUser))
-                {
-                    AdminMenu();
-                }
-                else
-                {
-                    UserMenu(currentUser);
-                }
+            if (IsAdmin(currentUser))
+            {
+                AdminMenu();
+            }
+            else
+            {
+                UserMenu(currentUser);
+            }
         }
 
         static void ReturnToMenu()
@@ -72,7 +78,7 @@
                     return true;
                 }
             }
-            
+
             role = string.Empty;
             return false;
         }
@@ -106,8 +112,10 @@
             Console.WriteLine("5. Просмотреть список книг");
             Console.WriteLine("6. Сменить пользователя");
             Console.WriteLine("7. Выйти");
+            Console.WriteLine("8. Добавит новую книгу");
+            Console.WriteLine("9.Найти книгу по автору");
 
-            int choice = GetChoice(1, 7);
+            int choice = GetChoice(1, 9);
 
             switch (choice)
             {
@@ -184,8 +192,84 @@
                     Console.WriteLine("Выход...");
                     Environment.Exit(0);
                     break;
+                case 8:
+                    AddNewBook();
+                    Console.ReadKey();
+                    ReturnToMenu();
+                    break;
+                case 9:
+                    SearchBookByAuthor();
+                    Console.ReadKey();
+                    ReturnToMenu();
+                    break;
+
             }
         }
+
+
+
+
+        static void AddNewBook()
+        {
+            Console.WriteLine("Введите название книги:");
+            string bookName = Console.ReadLine();
+
+            Console.WriteLine("Введите описание книги:");
+            string bookDescription = Console.ReadLine();
+
+            Console.WriteLine("Введите автора книги:");
+            string bookAuthor = Console.ReadLine();
+
+            if (CreateNewBook(bookName, bookDescription, bookAuthor))
+            {
+                Console.WriteLine("Новая книга успешно добавлена.");
+            }
+            else
+            {
+                Console.WriteLine("Ошибка при добавлении новой книги.");
+            }
+        }
+
+
+
+
+
+
+
+        static bool CreateNewBook(string bookName, string bookDescription, string bookAuthor)
+        {
+            try
+            {
+                int nextBookIndex = GetNextBookIndex();
+                string newBookFilePath = $"{nextBookIndex}.txt";
+                string newBookDescriptionFilePath = $"{nextBookIndex}_description.txt";
+
+                string[] newBookData = { $"Название: {bookName}", $"Автор: {bookAuthor}", $"Описание: {bookDescription}" };
+
+                File.WriteAllLines(newBookFilePath, newBookData);
+                File.WriteAllText(newBookDescriptionFilePath, bookDescription);
+
+                File.AppendAllText(booksFilePath, $"{Environment.NewLine}{bookName} - {bookAuthor}");
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+
+        static int GetNextBookIndex()
+        {
+            string[] books = File.ReadAllLines(booksFilePath);
+            return books.Length + 1;
+        }
+
+
+
+
 
         static void UserMenu(string username)
         {
@@ -198,8 +282,9 @@
             Console.WriteLine("5. Написать отзыв о книге");
             Console.WriteLine("6. Сменить пользователя");
             Console.WriteLine("7. Выйти");
+            Console.WriteLine("8. Найти книгу по автору");
 
-            int choice = GetChoice(1, 7);
+            int choice = GetChoice(1, 8);
 
             switch (choice)
             {
@@ -260,6 +345,11 @@
                 case 7:
                     Console.WriteLine("Выход...");
                     Environment.Exit(0);
+                    break;
+                case 8:
+                    SearchBookByAuthor();
+                    Console.ReadKey();
+                    ReturnToMenu();
                     break;
             }
         }
@@ -330,7 +420,7 @@
                 File.AppendAllText(usersFilePath, $"{Environment.NewLine}{user}");
                 return true;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
                 return false;
@@ -385,7 +475,10 @@
         {
             Console.WriteLine("Список всех книг:");
             string[] books = File.ReadAllLines(booksFilePath);
-            foreach (string book in books)
+
+            var sortedBooks = books.OrderBy(book => book);
+
+            foreach (string book in sortedBooks)
             {
                 Console.WriteLine(book);
             }
@@ -395,7 +488,7 @@
         {
             string[] books = File.ReadAllLines(booksFilePath);
             Console.WriteLine("Список книг : ");
-            foreach(string _book in books)
+            foreach (string _book in books)
             {
                 Console.WriteLine(_book);
             }
@@ -462,6 +555,45 @@
                 Console.WriteLine("Некорректный номер книги.");
             }
         }
+
+
+
+
+        static void SearchBookByAuthor()
+        {
+            Console.WriteLine("Введите автора книги:");
+            string author = Console.ReadLine();
+
+            string[] books = File.ReadAllLines(booksFilePath);
+            List<string> matchedBooks = new List<string>();
+
+            foreach (string book in books)
+            {
+                string[] bookInfo = book.Split('-');
+                string bookAuthor = bookInfo[1].Trim();
+
+                if (bookAuthor.Equals(author, StringComparison.OrdinalIgnoreCase))
+                {
+                    matchedBooks.Add(book);
+                }
+            }
+
+            if (matchedBooks.Count > 0)
+            {
+                Console.WriteLine($"Найденные книги автора '{author}':");
+                foreach (string matchedBook in matchedBooks)
+                {
+                    Console.WriteLine(matchedBook);
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Книги автора '{author}' не найдены.");
+            }
+        }
+
+
+
 
         static bool WriteBookReview(string username, int bookIndex, string review)
         {
